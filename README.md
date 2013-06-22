@@ -51,3 +51,13 @@ Instead of using the `BasicAuthProvider`, add the `BasicAuthWithRolesProvider` t
         environment.addResource(new SampleResource());
     }
 
+Build
+-----
+
+This project uses [gradle](http://www.gradle.org) as a build system. Either use:
+* `gradle build` and copy the JAR from `build/libs`
+* or even better use `gradle install` to utilize the maven plugin and install it into your local maven repository
+
+TODO
+----
+* add gradle wrapper
