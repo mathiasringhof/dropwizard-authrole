@@ -3,14 +3,14 @@ package eu.ringhof.dropwizard;
 import com.yammer.dropwizard.auth.basic.BasicCredentials;
 
 public class BasicCredentialsWithRequiredRoles extends BasicCredentials {
-    private final String[] roles;
+    private final String[] requiredRoles;
 
-    public BasicCredentialsWithRequiredRoles(String username, String password, String[] roles) {
+    public BasicCredentialsWithRequiredRoles(String username, String password, String[] requiredRoles) {
         super(username, password);
-        this.roles = roles;
+        this.requiredRoles = requiredRoles;
     }
 
-    public String[] getRoles() {
-        return roles;
+    public String[] getRequiredRoles() {
+        return requiredRoles;
     }
 }
