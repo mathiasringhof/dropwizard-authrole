@@ -21,5 +21,5 @@ public @interface AuthWithRoles {
     /**
      * The roles that will be provided to the {@code Authenticator}.
      */
-    String[] roles();
+    String[] roles() default {};
 }
