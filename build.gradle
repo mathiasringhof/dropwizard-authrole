@@ -18,3 +18,7 @@ dependencies {
             'com.yammer.dropwizard:dropwizard-auth:' + dropwizardVersion
     )
 }
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.6'
+}
