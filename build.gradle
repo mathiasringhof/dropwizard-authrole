@@ -4,6 +4,9 @@ apply plugin: 'maven'
 version = '0.2.1'
 group = 'eu.ringhof.dropwizard'
 
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
 project.ext {
     dropwizardVersion = '0.6.2'
 }
@@ -17,4 +20,8 @@ dependencies {
             'com.yammer.dropwizard:dropwizard-core:' + dropwizardVersion,
             'com.yammer.dropwizard:dropwizard-auth:' + dropwizardVersion
     )
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.6'
 }

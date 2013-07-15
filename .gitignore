@@ -1,2 +1,10 @@
-.gradle
-build
+# Gradle produced files
+.gradle/
+build/
+
+# Intellij project files
+.idea/
+*.iml
+
+# Mac files
+.DS_Store
